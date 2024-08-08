@@ -34,18 +34,32 @@ public class Main {
 
         //=============================================== Binary Search ===================================================
 
+        // int[] array = new int[50];
+
+        // for(int i= 0;i<50;i++) {
+        //     array[i] = i*2;
+        // }
+
+        // BinarySearch binarySearch = new BinarySearch(array);
+        // int index = binarySearch.search(16);
+        // if(index != -1)
+        //     System.out.println("Value found at: "+index);
+        // else
+        //     System.out.println("Value not found");
+
+        //=============================================== Interpolation Search ===================================================
+
         int[] array = new int[50];
 
         for(int i= 0;i<50;i++) {
             array[i] = i*2;
         }
 
-        BinarySearch binarySearch = new BinarySearch(array);
-        int index = binarySearch.search(16);
+        InterpolationSearch interpolationSearch = new InterpolationSearch(array);
+        int index = interpolationSearch.search(15);
         if(index != -1)
             System.out.println("Value found at: "+index);
         else
             System.out.println("Value not found");
-
     }
 }
