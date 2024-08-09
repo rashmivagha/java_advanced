@@ -49,17 +49,26 @@ public class Main {
 
         //=============================================== Interpolation Search ===================================================
 
-        int[] array = new int[50];
+        // int[] array = new int[50];
 
-        for(int i= 0;i<50;i++) {
-            array[i] = i*2;
-        }
+        // for(int i= 0;i<50;i++) {
+        //     array[i] = i*2;
+        // }
 
-        InterpolationSearch interpolationSearch = new InterpolationSearch(array);
-        int index = interpolationSearch.search(15);
-        if(index != -1)
-            System.out.println("Value found at: "+index);
-        else
-            System.out.println("Value not found");
+        // InterpolationSearch interpolationSearch = new InterpolationSearch(array);
+        // int index = interpolationSearch.search(15);
+        // if(index != -1)
+        //     System.out.println("Value found at: "+index);
+        // else
+        //     System.out.println("Value not found");
+
+
+
+        //======================================Supermarket Checkout=========================================
+
+
+        SupermarketCheckout supermarketCheckout = new SupermarketCheckout();
+        supermarketCheckout.customerEnter(0, 0, 15);
+        supermarketCheckout.lineService(0, 16);
     }
 }
